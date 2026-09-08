@@ -1,6 +1,14 @@
 // 2026 義大利行程 景點導覽資料
-// highlights: [中文, Italiano, English, 說明, 縮圖(可選, null 佔位), 地圖連結(可選)]；eat_* 另有 notes；days[].plan 每日行程；days[].maps 離線地圖；coords 座標；stores 採購地點
+// 結構說明見 ../_template/README.md
 window.GUIDE = {
+ "meta": {
+  "id": "italy2026",
+  "title": "2026 義大利",
+  "short": "義大利導覽",
+  "sub": "9/12 – 9/28 景點導覽",
+  "year": 2026,
+  "tz": 2
+ },
  "days": [
   {
    "date": "9/12",
@@ -5431,6 +5439,104 @@ window.GUIDE = {
    "notes": []
   }
  },
+ "storeKeys": [
+  "eat_florence_1",
+  "eat_venice_2",
+  "eat_napoli_1",
+  "eat_milan_5"
+ ],
+ "stores": [
+  {
+   "city": "米蘭",
+   "name": "Eataly Milano Smeraldo",
+   "ll": [
+    45.48,
+    9.188
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Eataly+Milano+Smeraldo",
+   "desc": "Piazza XXV Aprile 10。一站買齊精品食材：巴薩米克醋、Amedei / Domori 巧克力、開心果醬、Carnaroli 米、義大利麵。價格中高，選擇最全。"
+  },
+  {
+   "city": "米蘭",
+   "name": "Peck（1883 老店）",
+   "ll": [
+    45.463,
+    9.1858
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Peck+Via+Spadari+Milano",
+   "desc": "Via Spadari 9。米蘭美食精品店，起司、火腿、松露製品、自有品牌醋與油，貴但頂級，適合買一兩件送人。"
+  },
+  {
+   "city": "米蘭",
+   "name": "La Rinascente 百貨（退稅、化妝品）",
+   "ll": [
+    45.465,
+    9.1922
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=La+Rinascente+Milano+Duomo",
+   "desc": "Piazza del Duomo。Armani、Clarins 等化妝品專櫃，單店滿 €70 可辦退稅；頂樓食品區也有伴手禮。"
+  },
+  {
+   "city": "佛羅倫斯",
+   "name": "中央市場 Mercato Centrale",
+   "ll": [
+    43.7765,
+    11.2545
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale+Firenze",
+   "desc": "Piazza del Mercato Centrale。一樓食材攤：橄欖油、乾牛肝菌、香料、Cantucci、皮件小攤；二樓美食街。Da Nerbone 牛肚包在一樓。"
+  },
+  {
+   "city": "佛羅倫斯",
+   "name": "Scuola del Cuoio 皮革學校",
+   "ll": [
+    43.7684,
+    11.2634
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Scuola+del+Cuoio+Firenze",
+   "desc": "Via San Giuseppe 5r（Santa Croce 教堂後方）。方濟會修道院內的皮革學校，品質保證、價高，可看師傅現場製作與燙金。"
+  },
+  {
+   "city": "拿坡里",
+   "name": "Pignasecca 市場",
+   "ll": [
+    40.8455,
+    14.247
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+della+Pignasecca+Napoli",
+   "desc": "Via Pignasecca。拿坡里最老的街市，香料、辣椒串、乾貨、水果最便宜；Le Zendraglie 與 Pescheria Azzurra 就在市場內。"
+  },
+  {
+   "city": "羅馬",
+   "name": "Venchi Via del Corso",
+   "ll": [
+    41.901,
+    12.4795
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Venchi+Via+del+Corso+Roma",
+   "desc": "Via del Corso 335。Venchi 巧克力專賣店，包餡巧克力、榛果醬、鐵盒禮盒，也賣 gelato。"
+  },
+  {
+   "city": "威尼斯",
+   "name": "Rialto 市場",
+   "ll": [
+    45.44,
+    12.3345
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Rialto+Venezia",
+   "desc": "Campo de la Pescaria。早市（週日休）：魚市與蔬果攤，看熱鬧為主；旁邊酒吧吃 cicchetti。"
+  },
+  {
+   "city": "Orvieto",
+   "name": "Corso Cavour 食材店",
+   "ll": [
+    42.7185,
+    12.109
+   ],
+   "map": "https://www.google.com/maps/search/?api=1&query=Corso+Cavour+Orvieto",
+   "desc": "Orvieto 主街。多家 bottega 賣松露鹽、松露醬、乾牛肝菌、翁布里亞橄欖油、Orvieto Classico 白酒，可試吃。"
+  }
+ ],
  "coords": {
   "forum": [
    41.8925,
@@ -5804,103 +5910,5 @@ window.GUIDE = {
    45.4656,
    9.19
   ]
- },
- "storeKeys": [
-  "eat_florence_1",
-  "eat_venice_2",
-  "eat_napoli_1",
-  "eat_milan_5"
- ],
- "stores": [
-  {
-   "city": "米蘭",
-   "name": "Eataly Milano Smeraldo",
-   "ll": [
-    45.48,
-    9.188
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Eataly+Milano+Smeraldo",
-   "desc": "Piazza XXV Aprile 10。一站買齊精品食材：巴薩米克醋、Amedei / Domori 巧克力、開心果醬、Carnaroli 米、義大利麵。價格中高，選擇最全。"
-  },
-  {
-   "city": "米蘭",
-   "name": "Peck（1883 老店）",
-   "ll": [
-    45.463,
-    9.1858
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Peck+Via+Spadari+Milano",
-   "desc": "Via Spadari 9。米蘭美食精品店，起司、火腿、松露製品、自有品牌醋與油，貴但頂級，適合買一兩件送人。"
-  },
-  {
-   "city": "米蘭",
-   "name": "La Rinascente 百貨（退稅、化妝品）",
-   "ll": [
-    45.465,
-    9.1922
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=La+Rinascente+Milano+Duomo",
-   "desc": "Piazza del Duomo。Armani、Clarins 等化妝品專櫃，單店滿 €70 可辦退稅；頂樓食品區也有伴手禮。"
-  },
-  {
-   "city": "佛羅倫斯",
-   "name": "中央市場 Mercato Centrale",
-   "ll": [
-    43.7765,
-    11.2545
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+Centrale+Firenze",
-   "desc": "Piazza del Mercato Centrale。一樓食材攤：橄欖油、乾牛肝菌、香料、Cantucci、皮件小攤；二樓美食街。Da Nerbone 牛肚包在一樓。"
-  },
-  {
-   "city": "佛羅倫斯",
-   "name": "Scuola del Cuoio 皮革學校",
-   "ll": [
-    43.7684,
-    11.2634
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Scuola+del+Cuoio+Firenze",
-   "desc": "Via San Giuseppe 5r（Santa Croce 教堂後方）。方濟會修道院內的皮革學校，品質保證、價高，可看師傅現場製作與燙金。"
-  },
-  {
-   "city": "拿坡里",
-   "name": "Pignasecca 市場",
-   "ll": [
-    40.8455,
-    14.247
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+della+Pignasecca+Napoli",
-   "desc": "Via Pignasecca。拿坡里最老的街市，香料、辣椒串、乾貨、水果最便宜；Le Zendraglie 與 Pescheria Azzurra 就在市場內。"
-  },
-  {
-   "city": "羅馬",
-   "name": "Venchi Via del Corso",
-   "ll": [
-    41.901,
-    12.4795
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Venchi+Via+del+Corso+Roma",
-   "desc": "Via del Corso 335。Venchi 巧克力專賣店，包餡巧克力、榛果醬、鐵盒禮盒，也賣 gelato。"
-  },
-  {
-   "city": "威尼斯",
-   "name": "Rialto 市場",
-   "ll": [
-    45.44,
-    12.3345
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Mercato+di+Rialto+Venezia",
-   "desc": "Campo de la Pescaria。早市（週日休）：魚市與蔬果攤，看熱鬧為主；旁邊酒吧吃 cicchetti。"
-  },
-  {
-   "city": "Orvieto",
-   "name": "Corso Cavour 食材店",
-   "ll": [
-    42.7185,
-    12.109
-   ],
-   "map": "https://www.google.com/maps/search/?api=1&query=Corso+Cavour+Orvieto",
-   "desc": "Orvieto 主街。多家 bottega 賣松露鹽、松露醬、乾牛肝菌、翁布里亞橄欖油、Orvieto Classico 白酒，可試吃。"
-  }
- ]
+ }
 };
