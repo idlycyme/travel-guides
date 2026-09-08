@@ -1,0 +1,1 @@
+Read `AGENTS.md` before any edit or push. This repo is public: no emails, local paths, account details, secrets or booking identifiers may be committed. Run the pre-push grep in `AGENTS.md` §2 and `python3 tools/build_sw.py` in the changed guide folder before committing. Schema and workflow: `_template/README.md`. Skill: `/travel-guide`.
