@@ -1,0 +1,247 @@
+{
+ "colosseum": {
+  "file": "img/colosseum.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg",
+  "title": "Colosseum"
+ },
+ "forum": {
+  "file": "img/forum.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg",
+  "title": "Roman Forum"
+ },
+ "palatine": {
+  "file": "img/palatine.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/62/Palatine_Hill_from_across_the_Circus_Maximus_April_2019.jpg",
+  "title": "Palatine Hill"
+ },
+ "stpeters": {
+  "file": "img/stpeters.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
+  "title": "St. Peter's Basilica"
+ },
+ "stpeters_int": {
+  "file": "img/stpeters_int.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Baldaquin_Bernin_Saint-Pierre_Vatican.jpg",
+  "title": "St. Peter's Baldachin"
+ },
+ "vatican_museums": {
+  "file": "img/vatican_museums.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/b/be/Gallery_of_Maps_Ceiling_%2815589784546%29.jpg",
+  "title": "Vatican Gallery of Maps"
+ },
+ "sistine": {
+  "file": "img/sistine.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
+  "title": "Sistine Chapel ceiling"
+ },
+ "bramante": {
+  "file": "img/bramante.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Vatican_Museums_Spiral_Staircase_Looking_Up_2012.jpg",
+  "title": "Bramante Staircase"
+ },
+ "castel": {
+  "file": "img/castel.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/5/57/Castel_Sant%27Angelo_at_Night.jpg",
+  "title": "Castel Sant'Angelo"
+ },
+ "ponte_santangelo": {
+  "file": "img/ponte_santangelo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/8/84/Sant%27Angelo_bridge%2C_dusk%2C_Rome%2C_Italy.jpg",
+  "title": "Ponte Sant'Angelo"
+ },
+ "sansevero": {
+  "file": "img/sansevero.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Cappellaentrance.jpg",
+  "title": "Cappella Sansevero"
+ },
+ "veiled_christ": {
+  "file": "img/veiled_christ.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/3/38/Cristo_Velato_Volto.jpg",
+  "title": "Veiled Christ"
+ },
+ "pompeii": {
+  "file": "img/pompeii.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Aerial_image_of_Pompeii_and_Mount_Vesuvius_%28view_from_the_southeast%29.jpg",
+  "title": "Pompeii"
+ },
+ "orvieto": {
+  "file": "img/orvieto.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/05/Panorama_di_Orvieto.jpg",
+  "title": "Orvieto"
+ },
+ "orvieto_duomo": {
+  "file": "img/orvieto_duomo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Orvieto_-_Duomo_di_Orvieto_-_2023-10-01_01-15-01_001.JPG",
+  "title": "Orvieto Cathedral"
+ },
+ "pozzo": {
+  "file": "img/pozzo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orvieto_Pozzo_San_Patrizio_1.JPG",
+  "title": "Pozzo di San Patrizio"
+ },
+ "civita": {
+  "file": "img/civita.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Civita_%28Bagnoregio%29_-_Panorama.jpg",
+  "title": "Civita di Bagnoregio"
+ },
+ "campo": {
+  "file": "img/campo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Siena5.jpg",
+  "title": "Piazza del Campo"
+ },
+ "siena_duomo": {
+  "file": "img/siena_duomo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Duomo_di_Siena-9635.jpg",
+  "title": "Siena Cathedral"
+ },
+ "mangia": {
+  "file": "img/mangia.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Siena%2C_Tuscany%2C_Italy-12May2013.jpg",
+  "title": "Torre del Mangia"
+ },
+ "manarola": {
+  "file": "img/manarola.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg",
+  "title": "Manarola"
+ },
+ "vernazza": {
+  "file": "img/vernazza.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Vernazza_and_the_sea%2C_Cinque_Terre%2C_Italy.jpg",
+  "title": "Vernazza"
+ },
+ "riomaggiore": {
+  "file": "img/riomaggiore.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/76/Riomaggiore_From_Ferry_Cinque_Terre_Italy_Sep23_A7C_07414.jpg",
+  "title": "Riomaggiore"
+ },
+ "monterosso": {
+  "file": "img/monterosso.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Monterosso_al_Mare-panorama-paese.jpg",
+  "title": "Monterosso al Mare"
+ },
+ "corniglia": {
+  "file": "img/corniglia.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/6c/East_Above_Corniglia_Cinque_Terre_Sep23_A7C_06797.jpg",
+  "title": "Corniglia"
+ },
+ "flo_duomo": {
+  "file": "img/flo_duomo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg",
+  "title": "Florence Cathedral"
+ },
+ "uffizi": {
+  "file": "img/uffizi.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Florence%2C_Italy_-_panoramio_%28125%29.jpg",
+  "title": "Uffizi"
+ },
+ "venus": {
+  "file": "img/venus.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
+  "title": "The Birth of Venus"
+ },
+ "santacroce": {
+  "file": "img/santacroce.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Basilica_di_Santa_Croce_%2812437%29.jpg",
+  "title": "Santa Croce, Florence"
+ },
+ "accademia": {
+  "file": "img/accademia.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/David_at_the_Galleria_dell%27Accademia_%2861351%29.jpg",
+  "title": "Galleria dell'Accademia"
+ },
+ "david": {
+  "file": "img/david.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg",
+  "title": "David (Michelangelo)"
+ },
+ "pontevecchio": {
+  "file": "img/pontevecchio.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ponte_Vecchio_from_Ponte_alle_Grazie.jpg",
+  "title": "Ponte Vecchio"
+ },
+ "burano": {
+  "file": "img/burano.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Burano_Venice_17.jpg",
+  "title": "Burano"
+ },
+ "sangiorgio": {
+  "file": "img/sangiorgio.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/08/San_Giorgio_Maggiore_from_the_top_of_St_Mark%27s_Campanile.jpg",
+  "title": "San Giorgio Maggiore"
+ },
+ "sanmarco": {
+  "file": "img/sanmarco.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/61/Venezia_Basilica_di_San_Marco_Fassade_2.jpg",
+  "title": "St Mark's Basilica"
+ },
+ "ducale": {
+  "file": "img/ducale.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/%28Venice%29_Doge%27s_Palace_and_campanile_of_St._Mark%27s_Basilica_facing_the_sea.jpg",
+  "title": "Doge's Palace"
+ },
+ "correr": {
+  "file": "img/correr.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Venezia_piazza_s.Marco.JPG",
+  "title": "Museo Correr"
+ },
+ "piazza_sanmarco": {
+  "file": "img/piazza_sanmarco.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Piazza_San_Marco_%28Venice%29_at_night-msu-2021-6449-.jpg",
+  "title": "Piazza San Marco"
+ },
+ "lastsupper": {
+  "file": "img/lastsupper.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+  "title": "The Last Supper (Leonardo)"
+ },
+ "grazie": {
+  "file": "img/grazie.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/8/83/Santa_Maria_delle_Grazie_Milan_2013.jpg",
+  "title": "Santa Maria delle Grazie, Milan"
+ },
+ "milan_duomo": {
+  "file": "img/milan_duomo.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+  "title": "Milan Cathedral"
+ },
+ "galleria_milan": {
+  "file": "img/galleria_milan.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Galleria_Milano_%28179532365%29.jpeg",
+  "title": "Galleria Vittorio Emanuele II"
+ },
+ "napoli_sott": {
+  "file": "img/napoli_sott.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Napoli_Sotterranea_1.jpg",
+  "title": "Sottosuolo di Napoli"
+ },
+ "piazzale": {
+  "file": "img/piazzale.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Blick_auf_und_vom_Piazzale_Michelangelo_%28LM28908%29.jpg",
+  "title": "Piazzale Michelangelo"
+ },
+ "pompeii_forum": {
+  "file": "img/pompeii_forum.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Pompei_5058.jpg",
+  "title": "Temple of Apollo (Pompeii)"
+ },
+ "vesuvius": {
+  "file": "img/vesuvius.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg",
+  "title": "Mount Vesuvius"
+ },
+ "campanile_venice": {
+  "file": "img/campanile_venice.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Campanile_of_St._Mark%27s_Basilica_-_remote_view.jpg",
+  "title": "St Mark's Campanile"
+ },
+ "pantheon": {
+  "file": "img/pantheon.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg",
+  "title": "Pantheon, Rome"
+ },
+ "trevi": {
+  "file": "img/trevi.jpg",
+  "src": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Trevi_Fountain_-_Roma.jpg",
+  "title": "Trevi Fountain"
+ }
+}

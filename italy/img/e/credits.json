@@ -1,0 +1,206 @@
+{
+ "affogato": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Vinoteca%2C_Smithfield%2C_London_%284485849609%29.jpg/960px-Vinoteca%2C_Smithfield%2C_London_%284485849609%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Affogato",
+  "lang": "en",
+  "file": "img/e/affogato.jpg"
+ },
+ "carbonara": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Espaguetis_carbonara.jpg/960px-Espaguetis_carbonara.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Carbonara",
+  "lang": "en",
+  "file": "img/e/carbonara.jpg"
+ },
+ "colonne": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Colonne_San_Lorenzo_2011.jpg/960px-Colonne_San_Lorenzo_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Colonne di San Lorenzo",
+  "lang": "en",
+  "file": "img/e/colonne.jpg"
+ },
+ "frittomisto": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Italy-Italia_Italian_Food_Fritto_misto_alla_piemontese_PxT.JPG/960px-Italy-Italia_Italian_Food_Fritto_misto_alla_piemontese_PxT.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Fritto misto",
+  "lang": "en",
+  "file": "img/e/frittomisto.jpg"
+ },
+ "gelato": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Delicious_Gelato_on_display.jpg/960px-Delicious_Gelato_on_display.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Gelato",
+  "lang": "en",
+  "file": "img/e/gelato.jpg"
+ },
+ "cadorna": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/9/95/Milano_-_Piazzale_Cadorna_e_Stazione_Ferrovie_Nord_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Milano Cadorna railway station",
+  "lang": "en",
+  "file": "img/e/cadorna.jpg"
+ },
+ "moka": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Moka_Express_Bialetti.png/960px-Moka_Express_Bialetti.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Moka pot",
+  "lang": "en",
+  "file": "img/e/moka.jpg"
+ },
+ "cordusio": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Piazza_Cordusio_a_Milano%2C_veduta_generale.jpg/960px-Piazza_Cordusio_a_Milano%2C_veduta_generale.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Piazza Cordusio",
+  "lang": "en",
+  "file": "img/e/cordusio.jpg"
+ },
+ "pizza": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/960px-Pizza-3007395.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pizza",
+  "lang": "en",
+  "file": "img/e/pizza.jpg"
+ },
+ "risotto_tartufo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Risotto",
+  "lang": "en",
+  "file": "img/e/risotto_tartufo.jpg"
+ },
+ "tagliatelle": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/67/Nests_of_tagliatelle_bolognesi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Tagliatelle",
+  "lang": "en",
+  "file": "img/e/tagliatelle.jpg"
+ },
+ "trevi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/960px-Trevi_Fountain_-_Roma.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Trevi Fountain",
+  "lang": "en",
+  "file": "img/e/trevi.jpg"
+ },
+ "pollo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Flickr_preppybyday_4618397089--Chicken_cacciatore.jpg/960px-Flickr_preppybyday_4618397089--Chicken_cacciatore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Cacciatore",
+  "lang": "en",
+  "file": "img/e/pollo.jpg"
+ },
+ "panino": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Italian_Sandwich.jpeg/960px-Italian_Sandwich.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Panini (sandwich)",
+  "lang": "en",
+  "file": "img/e/panino.jpg"
+ },
+ "cotoletta": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Cotoletta_e_patate_al_forno.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Veal Milanese",
+  "lang": "en",
+  "file": "img/e/cotoletta.jpg"
+ },
+ "zattere": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Venezia_location_map.svg/960px-Venezia_location_map.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Fondamenta delle Zattere",
+  "lang": "it",
+  "file": "img/e/zattere.jpg"
+ },
+ "tiramisu": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Tiramisu_-_Raffaele_Diomede.jpg/960px-Tiramisu_-_Raffaele_Diomede.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Tiramisu",
+  "lang": "en",
+  "file": "img/e/tiramisu.jpg"
+ },
+ "acquaalta_lib": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Libreria_Acqua_Alta_04.jpg/960px-Libreria_Acqua_Alta_04.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Libreria Acqua Alta",
+  "lang": "en",
+  "file": "img/e/acquaalta_lib.jpg"
+ },
+ "napoli_pizza": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg/960px-Neapolitan_pizza_at_Trappica_%2848701940197%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Neapolitan pizza",
+  "lang": "en",
+  "file": "img/e/napoli_pizza.jpg"
+ },
+ "pizzafritta": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Pizza_fritta_in_Rome_%281%29.jpg/960px-Pizza_fritta_in_Rome_%281%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pizza fritta",
+  "lang": "it",
+  "file": "img/e/pizzafritta.jpg"
+ },
+ "espresso": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg/960px-Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Espresso",
+  "lang": "en",
+  "file": "img/e/espresso.jpg"
+ },
+ "romanbanquet": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Still_life_with_eggs%2C_birds_and_bronze_dishes%2C_Pompeii.jpg/960px-Still_life_with_eggs%2C_birds_and_bronze_dishes%2C_Pompeii.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Ancient Roman cuisine",
+  "lang": "en",
+  "file": "img/e/romanbanquet.jpg"
+ },
+ "bistecca": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/1/12/Bistecca_alla_fiorentina-01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Bistecca alla fiorentina",
+  "lang": "en",
+  "file": "img/e/bistecca.jpg"
+ },
+ "cicchetti": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Cicchetti_Venezia_%281%29.jpg/960px-Cicchetti_Venezia_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Cicchetti",
+  "lang": "en",
+  "file": "img/e/cicchetti.jpg"
+ },
+ "prada": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Fondazione_Prada%2C_Milan.jpg/960px-Fondazione_Prada%2C_Milan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Fondazione Prada",
+  "lang": "en",
+  "file": "img/e/prada.jpg"
+ },
+ "garum": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Garumamphoren.JPG/960px-Garumamphoren.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Garum",
+  "lang": "en",
+  "file": "img/e/garum.jpg"
+ },
+ "granita": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Granita_originelle_au_citron_de_Sicile.jpg/960px-Granita_originelle_au_citron_de_Sicile.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Granita",
+  "lang": "en",
+  "file": "img/e/granita.jpg"
+ },
+ "lampredotto": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Lampredotto_2.jpg/960px-Lampredotto_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Lampredotto",
+  "lang": "en",
+  "file": "img/e/lampredotto.jpg"
+ },
+ "maritozzo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg/960px-Maritozzo_presso_Caff%C3%A8_delle_colline%2C_Reggio_Emilia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Maritozzo",
+  "lang": "en",
+  "file": "img/e/maritozzo.jpg"
+ },
+ "pici": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Pici_con_albume.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Pici",
+  "lang": "en",
+  "file": "img/e/pici.jpg"
+ },
+ "baba": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/BabaRum.jpg/960px-BabaRum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Rum baba",
+  "lang": "en",
+  "file": "img/e/baba.jpg"
+ },
+ "sfogliatella": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Sfogliatelle_ricce_e_frolle.jpg/960px-Sfogliatelle_ricce_e_frolle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Sfogliatella",
+  "lang": "en",
+  "file": "img/e/sfogliatella.jpg"
+ },
+ "trattoria": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Al_Borgat_1.jpg/960px-Al_Borgat_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Trattoria",
+  "lang": "en",
+  "file": "img/e/trattoria.jpg"
+ },
+ "schiacciata": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Scacce_salsa-ricotta.jpg/960px-Scacce_salsa-ricotta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Scaccia",
+  "lang": "en",
+  "file": "img/e/schiacciata.jpg"
+ }
+}

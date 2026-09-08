@@ -1,0 +1,302 @@
+{
+ "amedei": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Amedei_logo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Amedei",
+  "lang": "en",
+  "file": "img/s/amedei.jpg"
+ },
+ "porcini": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Boletus_edulis_IT.jpg/960px-Boletus_edulis_IT.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Boletus edulis",
+  "lang": "en",
+  "file": "img/s/porcini.jpg"
+ },
+ "carnaroli": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Carnaroligrains.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Carnaroli",
+  "lang": "en",
+  "file": "img/s/carnaroli.jpg"
+ },
+ "cashmere": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Kaschmirschal_1.jpg/960px-Kaschmirschal_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Cashmere wool",
+  "lang": "en",
+  "file": "img/s/cashmere.jpg"
+ },
+ "chianticlassico": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Fiasco_di_vino_rosso_da_tavola_Monteriggioni.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Chianti",
+  "lang": "en",
+  "file": "img/s/chianticlassico.jpg"
+ },
+ "eataly": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Eataly_-_logo_%28Italy%2C_2004%29.svg/960px-Eataly_-_logo_%28Italy%2C_2004%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Eataly",
+  "lang": "en",
+  "file": "img/s/eataly.jpg"
+ },
+ "finocchio": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/960px-Foeniculum_July_2011-1a.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Fennel",
+  "lang": "en",
+  "file": "img/s/finocchio.jpg"
+ },
+ "focaccia": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Focaccia_with_Crumb.jpg/960px-Focaccia_with_Crumb.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Focaccia",
+  "lang": "en",
+  "file": "img/s/focaccia.jpg"
+ },
+ "gianduja": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Gianduiotti.jpg/960px-Gianduiotti.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Gianduja (chocolate)",
+  "lang": "en",
+  "file": "img/s/gianduja.jpg"
+ },
+ "moka": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Moka_Express_Bialetti.png/960px-Moka_Express_Bialetti.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Moka pot",
+  "lang": "en",
+  "file": "img/s/moka.jpg"
+ },
+ "evoo": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Oliven_V1.jpg/960px-Oliven_V1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Olive oil",
+  "lang": "en",
+  "file": "img/s/evoo.jpg"
+ },
+ "origano": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/960px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Oregano",
+  "lang": "en",
+  "file": "img/s/origano.jpg"
+ },
+ "panettone": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Panettone_-_Nicolettone_2017_-_IMG_7085_%2831752542285%29.jpg/960px-Panettone_-_Nicolettone_2017_-_IMG_7085_%2831752542285%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Panettone",
+  "lang": "en",
+  "file": "img/s/panettone.jpg"
+ },
+ "panforte": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Panforte.jpg/960px-Panforte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Panforte",
+  "lang": "en",
+  "file": "img/s/panforte.jpg"
+ },
+ "pasta": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg/960px-%28Pasta%29_by_David_Adam_Kess_%28pic.2%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pasta",
+  "lang": "en",
+  "file": "img/s/pasta.jpg"
+ },
+ "peperoncino": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Capsicum_-Chili_-_Peperoncino_-_Il_Viagra_Calabrese_-_Calabria_-_Italy_-_July_17th_2013_-_02.jpg/960px-Capsicum_-Chili_-_Peperoncino_-_Il_Viagra_Calabrese_-_Calabria_-_Italy_-_July_17th_2013_-_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Peperoncino",
+  "lang": "en",
+  "file": "img/s/peperoncino.jpg"
+ },
+ "pesto": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/BasilPesto.JPG/960px-BasilPesto.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pesto",
+  "lang": "en",
+  "file": "img/s/pesto.jpg"
+ },
+ "prosecco": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Prosecco_di_Conegliano_bottle_and_glass.jpg/960px-Prosecco_di_Conegliano_bottle_and_glass.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Prosecco",
+  "lang": "en",
+  "file": "img/s/prosecco.jpg"
+ },
+ "ricciarelli": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Ricciarelli_from_Siena-2.jpg/960px-Ricciarelli_from_Siena-2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Ricciarelli",
+  "lang": "en",
+  "file": "img/s/ricciarelli.jpg"
+ },
+ "rosmarino": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/960px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Rosemary",
+  "lang": "en",
+  "file": "img/s/rosmarino.jpg"
+ },
+ "zafferano": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Saffron_-_premium_spice.jpg/960px-Saffron_-_premium_spice.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Saffron",
+  "lang": "en",
+  "file": "img/s/zafferano.jpg"
+ },
+ "salvia": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Salvia_officinalis0.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Salvia officinalis",
+  "lang": "en",
+  "file": "img/s/salvia.jpg"
+ },
+ "taralli": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Tarallini2.JPG/960px-Tarallini2.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Taralli",
+  "lang": "en",
+  "file": "img/s/taralli.jpg"
+ },
+ "truffle": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Truffe_noire_du_P%C3%A9rigord.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Truffle",
+  "lang": "en",
+  "file": "img/s/truffle.jpg"
+ },
+ "buranolace": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Argentella_kant_CBY-12.jpg/960px-Argentella_kant_CBY-12.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Argentella",
+  "lang": "en",
+  "file": "img/s/buranolace.jpg"
+ },
+ "illy": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_Illy.svg/960px-Logo_Illy.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Illy",
+  "lang": "en",
+  "file": "img/s/illy.jpg"
+ },
+ "parmigiano": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Parmigiano_Reggiano%2C_Italien%2C_Europ%C3%A4ische_Union.jpg/960px-Parmigiano_Reggiano%2C_Italien%2C_Europ%C3%A4ische_Union.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Parmesan",
+  "lang": "en",
+  "file": "img/s/parmigiano.jpg"
+ },
+ "pecorino": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Pecorino_romano_cheese.jpg/960px-Pecorino_romano_cheese.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pecorino romano",
+  "lang": "en",
+  "file": "img/s/pecorino.jpg"
+ },
+ "risottomilanese": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg/960px-Risotto_with_speck_and_goat_cheese_%286101067436%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Risotto",
+  "lang": "en",
+  "file": "img/s/risottomilanese.jpg"
+ },
+ "balsamico": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Barrels_vinegar.jpg/960px-Barrels_vinegar.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Traditional balsamic vinegar",
+  "lang": "en",
+  "file": "img/s/balsamico.jpg"
+ },
+ "murano": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Bowl_MET_DP100236.jpg/960px-Bowl_MET_DP100236.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Venetian glass",
+  "lang": "en",
+  "file": "img/s/murano.jpg"
+ },
+ "dop": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Logo_it_AOP_4c.svg/960px-Logo_it_AOP_4c.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Denominazione di origine protetta",
+  "lang": "it",
+  "file": "img/s/dop.jpg"
+ },
+ "erbolario": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/L%E2%80%99erbolario_in_Modena%2C_Italy%2C_2019.jpg/960px-L%E2%80%99erbolario_in_Modena%2C_Italy%2C_2019.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "L'Erbolario",
+  "lang": "it",
+  "file": "img/s/erbolario.jpg"
+ },
+ "mulino": {
+  "src": "https://thumb.wikimedia.org/wikipedia/it/thumb/3/37/Logo_mulino_bianco.svg/960px-Logo_mulino_bianco.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Mulino Bianco",
+  "lang": "it",
+  "file": "img/s/mulino.jpg"
+ },
+ "orvietowine": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/2/29/OrvietoWineAndDuomo.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Orvieto (vino)",
+  "lang": "it",
+  "file": "img/s/orvietowine.jpg"
+ },
+ "gragnano": {
+  "src": "https://upload.wikimedia.org/wikipedia/it/b/ba/Logo_Pasta_di_Gragnano_IGP.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Pasta di Gragnano",
+  "lang": "it",
+  "file": "img/s/gragnano.jpg"
+ },
+ "venchi": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Venchi_logo_%282013%29.svg/960px-Venchi_logo_%282013%29.svg.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Venchi",
+  "lang": "it",
+  "file": "img/s/venchi.jpg"
+ },
+ "basilico": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/BasilikumGenovesergro%C3%9Fbl%C3%A4ttriger.jpg/960px-BasilikumGenovesergro%C3%9Fbl%C3%A4ttriger.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Basilico Genovese",
+  "lang": "it",
+  "file": "img/s/basilico.jpg"
+ },
+ "sciacchetra": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/5/59/Panorama_agricole_delle_Cinque_Terre.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Cinque Terre (vino)",
+  "lang": "it",
+  "file": "img/s/sciacchetra.jpg"
+ },
+ "gazzosa": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Gazzosa_Lurisia.jpg/960px-Gazzosa_Lurisia.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Gazzosa",
+  "lang": "it",
+  "file": "img/s/gazzosa.jpg"
+ },
+ "pocketcoffee": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Pocketcoffee_brand_logo.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Pocket Coffee",
+  "lang": "en",
+  "file": "img/s/pocketcoffee.jpg"
+ },
+ "chianti": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/6/66/Fiasco_di_vino_rosso_da_tavola_Monteriggioni.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Chianti (vino)",
+  "lang": "it",
+  "file": "img/s/chianti.jpg"
+ },
+ "bialetti": {
+  "src": "https://thumb.wikimedia.org/wikipedia/it/thumb/5/57/Logo_Bialetti.png/960px-Logo_Bialetti.png?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Bialetti Industrie",
+  "lang": "it",
+  "file": "img/s/bialetti.jpg"
+ },
+ "caffenapoli": {
+  "src": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Neapolitan_flip_coffee_pot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Reversible coffee pot",
+  "lang": "en",
+  "file": "img/s/caffenapoli.jpg"
+ },
+ "limoncello": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/SIMAL_limoncello_jp.jpg/960px-SIMAL_limoncello_jp.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Limoncello",
+  "lang": "it",
+  "file": "img/s/limoncello.jpg"
+ },
+ "baci": {
+  "src": "https://upload.wikimedia.org/wikipedia/it/2/2b/Logo_Baci_Perugina.JPG?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+  "title": "Bacio Perugina",
+  "lang": "it",
+  "file": "img/s/baci.jpg"
+ },
+ "leather": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Leathertools.jpg/960px-Leathertools.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Leather",
+  "lang": "en",
+  "file": "img/s/leather.jpg"
+ },
+ "cantucci": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/I_cantuccini.jpg/960px-I_cantuccini.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Cantuccio",
+  "lang": "it",
+  "file": "img/s/cantucci.jpg"
+ },
+ "acciughe": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Anchovy_closeup.jpg/960px-Anchovy_closeup.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Anchovy",
+  "lang": "en",
+  "file": "img/s/acciughe.jpg"
+ },
+ "pistacchio": {
+  "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Pistachio_vera.jpg/960px-Pistachio_vera.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+  "title": "Pistachio",
+  "lang": "en",
+  "file": "img/s/pistacchio.jpg"
+ }
+}

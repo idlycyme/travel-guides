@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>2026 義大利 景點導覽</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#8a3b2a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="義大利導覽">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<style>
+:root{
+  --bg:#f6f3ee; --card:#fff; --ink:#1f1d1a; --muted:#6b665e; --line:#e4dfd6;
+  --accent:#8a3b2a; --accent2:#c9a24a; --tint:#fbf7ef; --done:#2f7d4f;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#15140f; --card:#1e1c17; --ink:#f0ece4; --muted:#a39d92; --line:#312d26; --accent:#e0805f; --accent2:#e2c06b; --tint:#25221b; --done:#6fcf97; }
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"PingFang TC","Noto Sans TC","Helvetica Neue",sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+button{font:inherit;cursor:pointer}
+.app{display:grid;grid-template-columns:300px 1fr;min-height:100vh}
+/* sidebar */
+.side{border-right:1px solid var(--line);background:var(--card);position:sticky;top:0;height:100vh;overflow:auto;padding:14px 12px 30px}
+.brand{font-weight:700;font-size:17px;margin:4px 6px 10px;display:flex;align-items:center;justify-content:space-between}
+.brand small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.search{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);margin-bottom:10px}
+.day{margin:6px 0}
+.day>button{width:100%;text-align:left;background:none;border:0;padding:8px 6px;border-radius:8px;display:flex;gap:8px;align-items:baseline;color:var(--ink)}
+.day>button:hover{background:var(--tint)}
+.day .d{font-weight:700;color:var(--accent);min-width:44px}
+.day .c{font-weight:600}
+.day .t{color:var(--muted);font-size:12px;margin-left:auto}
+.day ul{list-style:none;margin:0;padding:0 0 4px 14px;display:none}
+.day.open ul{display:block}
+.day li button{width:100%;text-align:left;background:none;border:0;padding:6px 8px;border-radius:6px;color:var(--ink);display:flex;justify-content:space-between;gap:6px}
+.day li button:hover{background:var(--tint)}
+.day li button.active{background:var(--accent);color:#fff}
+.day li .pg{font-size:11px;color:var(--muted)}
+.day li button.active .pg{color:#fff9}
+.today{display:inline-block;font-size:11px;background:var(--accent2);color:#231;border-radius:10px;padding:0 7px;margin-left:6px}
+/* main */
+.main{padding:0 0 80px;min-width:0}
+.hero{position:relative;height:46vh;min-height:280px;max-height:520px;overflow:hidden;background:#000}
+.hero img{width:100%;height:100%;object-fit:cover;display:block;cursor:zoom-in}
+.hero .cap{position:absolute;left:0;right:0;bottom:0;padding:60px 28px 18px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff}
+.hero h1{margin:0;font-size:30px;line-height:1.2}
+.hero .en{opacity:.85;font-size:15px;margin-top:2px}
+.hero .imgcap{font-size:12px;opacity:.75;margin-top:6px}
+.wrap{max-width:860px;margin:0 auto;padding:22px 28px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{background:var(--tint);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:13px}
+.chip.b{border-color:var(--accent2);background:color-mix(in srgb,var(--accent2) 18%,transparent)}
+.intro{font-size:18px;line-height:1.7;margin:0 0 22px;color:var(--ink)}
+h2{font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:30px 0 12px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.hl{list-style:none;margin:0;padding:0}
+.hl li{display:grid;grid-template-columns:28px 1fr;align-items:start;gap:10px;padding:12px 10px;border-radius:10px;border:1px solid var(--line);margin-bottom:8px;background:var(--card)}
+.hl li.has-th{grid-template-columns:28px 1fr 96px}
+.hl .th{width:96px;height:96px;object-fit:cover;border-radius:8px;cursor:zoom-in;background:var(--tint)}
+@media (max-width:860px){.hl li.has-th{grid-template-columns:28px 1fr 84px}.hl .th{width:84px;height:84px}}
+.hl .map{display:inline-block;margin-top:8px;font-size:13px;padding:4px 10px;border:1px solid var(--accent);border-radius:999px;text-decoration:none}
+.hl .dot{color:var(--muted);font-size:16px;text-align:center;margin-top:2px}
+.hl.notes li{background:var(--tint)}
+.hl li.done{opacity:.55}
+.hl li.done .ht{text-decoration:line-through}
+.hl input{width:20px;height:20px;margin-top:4px;accent-color:var(--done)}
+.hl .ht{font-weight:700;font-size:16px}
+.hl .hn{color:var(--accent);font-size:13px;margin-top:1px;font-style:italic}
+.hl .hn .sep{color:var(--muted);font-style:normal}
+.hl .hd{color:var(--ink);margin-top:4px;font-size:15px}
+.lb .lc{max-width:90vw;text-align:center}
+.hist p{margin:0 0 12px;text-align:justify}
+.tips{margin:0;padding-left:20px}
+.tips li{margin-bottom:8px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px}
+.gal figure{margin:0;cursor:zoom-in}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
+.gal figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+.credit{font-size:11px;color:var(--muted);margin-top:30px}
+/* nav bar */
+.navbar{position:fixed;bottom:0;left:300px;right:0;display:flex;justify-content:space-between;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.navbar button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px;border-radius:10px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.navbar button.next{text-align:right}
+.navbar button:disabled{opacity:.35}
+/* overview */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card);cursor:pointer;transition:transform .15s}
+.card:hover{transform:translateY(-2px)}
+.card img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
+.card .cb{padding:10px 12px}
+.card .cn{font-weight:700}
+.card .ce{font-size:12px;color:var(--muted)}
+.card .ck{font-size:12px;color:var(--accent);margin-top:4px}
+.ovh{padding:30px 28px 10px;max-width:1000px;margin:0 auto}
+.ovh h1{margin:0 0 6px}
+.ovh p{color:var(--muted);margin:0}
+.dayhead{max-width:1000px;margin:26px auto 10px;padding:0 28px;display:flex;align-items:baseline;gap:10px}
+.dayhead b{color:var(--accent);font-size:20px}
+.dayhead span{color:var(--muted)}
+.cards-wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:50;flex-direction:column;padding:20px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:85vh;object-fit:contain}
+.lb .lc{color:#fff;opacity:.8;font-size:13px;margin-top:10px}
+/* mobile */
+.menubtn{display:none}
+@media (max-width:860px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;left:0;top:0;bottom:0;width:86vw;max-width:340px;transform:translateX(-102%);transition:transform .2s;z-index:40;box-shadow:0 0 40px rgba(0,0,0,.3)}
+  .side.on{transform:none}
+  .menubtn{display:inline-flex;position:fixed;top:12px;left:12px;z-index:45;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 12px;color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.15)}
+  .navbar{left:0}
+  .hero{height:38vh}
+  .hero h1{font-size:24px}
+  .wrap,.ovh,.cards-wrap,.dayhead{padding-left:16px;padding-right:16px}
+  .intro{font-size:17px}
+}
+
+/* day page */
+.dayhero{padding:26px 28px 14px;background:linear-gradient(180deg,var(--tint),var(--bg))}
+.dayhero .dt{font-size:13px;color:var(--muted);letter-spacing:.1em}
+.dayhero h1{margin:2px 0 4px;font-size:28px}
+.dayhero .sun{color:var(--muted);font-size:13px}
+.tl{list-style:none;margin:0;padding:0}
+.tl li{display:grid;grid-template-columns:92px 1fr;gap:10px;padding:8px 0;border-bottom:1px dashed var(--line)}
+.tl .t{font-weight:700;color:var(--accent);white-space:nowrap}
+.route{list-style:none;margin:0;padding:0}
+.route li{display:grid;grid-template-columns:34px 1fr auto;gap:10px;align-items:center;padding:10px 8px;border:1px solid var(--line);border-radius:10px;margin-bottom:6px;background:var(--card);cursor:pointer}
+.route li:hover{background:var(--tint)}
+.route .n{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.route .n.e{background:#d97706}.route .n.s{background:#6b7280}
+.route .walk{font-size:12px;color:var(--muted);padding:2px 0 6px 48px;list-style:none;border:0;background:none;display:block;cursor:default}
+.route .pg{font-size:12px;color:var(--muted)}
+.hotel{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--card)}
+.hotel b{display:block;font-size:16px}
+.hotel .a{color:var(--muted);font-size:14px}
+.mapimg{width:100%;border-radius:12px;border:1px solid var(--line);display:block;cursor:zoom-in}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;margin:8px 0 18px}
+.legend span b{display:inline-block;min-width:20px;height:20px;line-height:20px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;font-size:12px;margin-right:4px}
+.legend span b.e{background:#d97706}.legend span b.s{background:#228b54}.legend span b.h{background:#1e5ab4}
+.todo{list-style:none;margin:0;padding:0}
+.todo li{display:flex;gap:10px;align-items:flex-start;padding:8px 6px;border-bottom:1px dashed var(--line)}
+.todo input{width:20px;height:20px;margin-top:2px;accent-color:var(--done)}
+.todo li.done span{text-decoration:line-through;opacity:.55}
+.eatlist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px}
+.eatlist li{display:flex;justify-content:space-between;gap:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);font-size:14px}
+.eatlist a{text-decoration:none;font-size:13px;white-space:nowrap}
+.day>button .c{cursor:pointer}
+.eatlist li.x{display:block;cursor:pointer;padding:0}
+.eatlist li.x .row{display:flex;justify-content:space-between;padding:8px 10px}
+.eatlist li.x .tog{color:var(--muted);transition:transform .15s}
+.eatlist li.x.open .tog{transform:rotate(180deg)}
+.eatlist li.x .det{display:none;padding:0 10px 10px;border-top:1px dashed var(--line);cursor:default}
+.eatlist li.x.open .det{display:block}
+.eatlist li.x .det .hn{color:var(--accent);font-size:13px;font-style:italic;margin:6px 0}
+.eatlist li.x .det .hn .sep{color:var(--muted);font-style:normal}
+.eatlist li.x .det img{width:100%;max-height:180px;object-fit:cover;border-radius:8px;margin:4px 0 6px;display:block}
+.eatlist li.x .det .hd{font-size:14px;line-height:1.6}
+.eatlist li.x .det .map{display:inline-block;margin-top:8px;font-size:13px;padding:4px 10px;border:1px solid var(--accent);border-radius:999px;text-decoration:none}
+.eatlist li.x.open{grid-column:1/-1}
+@media (max-width:860px){.dayhero{padding-top:64px}}
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:39}
+.scrim.on{display:block}
+</style>
+</head>
+<body>
+<button class="menubtn" id="menubtn">☰ 行程</button>
+<div class="scrim" id="scrim"></div>
+<div class="app">
+  <aside class="side" id="side">
+    <div class="brand"><div>2026 義大利<small>9/12 – 9/28 景點導覽</small></div><div style="display:flex;gap:6px"><button id="daybtn" style="border:1px solid var(--accent);background:var(--accent);color:#fff;border-radius:8px;padding:4px 10px;font-size:12px">📅 每日</button><button id="homebtn" style="border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:4px 10px;font-size:12px">總覽</button></div></div>
+    <input class="search" id="q" placeholder="搜尋景點、關鍵字…">
+    <div id="days"></div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<div class="navbar" id="navbar"></div>
+<div class="lb" id="lb"><img id="lbimg" alt=""><div class="lc" id="lbcap"></div></div>
+
+<script src="data.js"></script>
+<script>
+(function(){
+const G = window.GUIDE, D = G.days, S = G.spots;
+const order = D.flatMap(d => d.spots);
+const spotDay = {}; D.forEach(d => d.spots.forEach(s => spotDay[s] = d));
+const LS = 'italy_guide_checks_v1';
+let checks = {}; try { checks = JSON.parse(localStorage.getItem(LS) || '{}'); } catch(e){}
+const save = () => localStorage.setItem(LS, JSON.stringify(checks));
+const $ = s => document.querySelector(s);
+const IMG = f => (window.IMGDATA && window.IMGDATA[f]) || ('img/'+f);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// today marker: dates are 2026
+const now = new Date();
+const todayKey = (now.getFullYear()===2026) ? `${now.getMonth()+1}/${now.getDate()}` : null;
+
+function progress(id){
+  const n = S[id].highlights.length, c = (checks[id]||[]).filter(Boolean).length;
+  return {n, c};
+}
+
+function renderSide(filter){
+  const box = $('#days'); box.innerHTML = '';
+  const f = (filter||'').trim().toLowerCase();
+  D.forEach((d, di) => {
+    const spots = d.spots.filter(id => {
+      if(!f) return true;
+      const sp = S[id];
+      const blob = [sp.name, sp.en, sp.city, sp.intro, ...sp.highlights.flat(), ...sp.history, ...sp.tips].join(' ').toLowerCase();
+      return blob.includes(f);
+    });
+    if(f && !spots.length) return;
+    const el = document.createElement('div'); el.className = 'day' + ((f || (state.spot && spotDay[state.spot]===d) || (state.day===d.date) || (!state.spot && !state.day && todayKey===d.date)) ? ' open' : '');
+    el.innerHTML = `<button data-day="${di}"><span class="d">${d.date}${d.dow?`<small style="font-weight:400">${d.dow}</small>`:''}</span><span class="c">${esc(d.city)}</span>${todayKey===d.date?'<span class="today">今天</span>':''}<span class="t">${esc(d.title)}</span></button><ul>${spots.map(id => {
+      const p = progress(id);
+      return `<li><button data-spot="${id}" class="${state.spot===id?'active':''}"><span>${S[id].kind==='shop'?'🛍 ':S[id].kind==='eat'?'🍴 ':''}${esc(S[id].name)}</span><span class="pg">${p.c}/${p.n}</span></button></li>`;
+    }).join('')}</ul>`;
+    box.appendChild(el);
+  });
+}
+
+const state = { spot: null, day: null };
+
+function showOverview(){
+  state.spot = null; state.day = null; location.hash = '';
+  const m = $('#main');
+  m.innerHTML = `<div class="ovh"><h1>景點導覽</h1><p>點日期標題進入當天的「今日頁」（時間表、住宿、路線、離線地圖）；點景點卡片進入導覽。旅行期間首頁會自動開當天。</p><div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">${D.filter(d=>d.plan).map(d=>`<button data-day="${D.indexOf(d)}" style="border:1px solid var(--line);background:var(--card);color:var(--accent);border-radius:999px;padding:4px 10px;font-size:13px;font-weight:700">${d.date}</button>`).join('')}</div></div>` +
+    D.map(d => `<div class="dayhead" ${d.plan?`data-day="${D.indexOf(d)}" style="cursor:pointer"`:``}><b>${d.date}</b>${d.plan?`<span style="font-size:12px;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:0 8px">今日頁 ›</span>`:``}<span>${d.dow?d.dow+'｜':''}${esc(d.city)}｜${esc(d.title)}</span>${todayKey===d.date?'<span class="today">今天</span>':''}</div><div class="cards-wrap"><div class="cards">${d.spots.map(id => {
+      const sp = S[id], p = progress(id);
+      return `<div class="card" data-spot="${id}"><img src="${IMG(sp.imgs[0].f)}" loading="lazy" alt=""><div class="cb"><div class="cn">${esc(sp.name)}</div><div class="ce">${esc(sp.en)}</div><div class="ck">${esc(sp.booked||'')}</div><div class="ce">${sp.kind==='shop'?'清單':sp.kind==='eat'?'店家':'看點'} ${p.c}/${p.n}</div></div></div>`;
+    }).join('')}</div></div>`).join('');
+  $('#navbar').innerHTML = '';
+  renderSide($('#q').value);
+  window.scrollTo(0,0);
+}
+
+function showSpot(id){
+  const sp = S[id]; if(!sp) return showOverview();
+  state.spot = id; state.day = null; location.hash = id;
+  const d = spotDay[id];
+  const ck = checks[id] || (checks[id] = sp.highlights.map(()=>false));
+  const m = $('#main');
+  m.innerHTML = `
+  <div class="hero"><img src="${IMG(sp.imgs[0].f)}" alt="" data-lb="0">
+    <div class="cap"><h1>${esc(sp.name)}</h1><div class="en">${esc(sp.en)}</div><div class="imgcap">${esc(sp.imgs[0].c||'')}</div></div></div>
+  <div class="wrap">
+    <div class="meta"><span class="chip">${d.dow?`${d.date}（${d.dow}）`:d.date+' '}${esc(d.city)}</span>${sp.booked?`<span class="chip b">📌 ${esc(sp.booked)}</span>`:''}</div>
+    <p class="intro">${esc(sp.intro)}</p>
+    <h2>${sp.kind==='shop'?'購物清單（打勾 = 已買）':sp.kind==='eat'?'店家清單（打勾 = 去過）':'看點'} <span style="letter-spacing:0;text-transform:none">${ck.filter(Boolean).length}/${sp.highlights.length}</span></h2>
+    <ul class="hl">${sp.highlights.map((h,i)=>`<li class="${ck[i]?'done':''}${h[4]?' has-th':''}"><input type="checkbox" data-i="${i}" ${ck[i]?'checked':''}><div><div class="ht">${esc(h[0])}</div>${h.length>3?`<div class="hn">${esc(h[1])}${h[2]&&h[2]!==h[1]?`<span class="sep"> · </span>${esc(h[2])}`:``}</div>`:``}<div class="hd">${esc(h[3])}</div>${h[5]?`<a class="map" href="${esc(h[5])}" target="_blank" rel="noopener">📍 Google 地圖</a>`:``}</div>${h[4]?`<img class="th" src="${IMG(h[4])}" loading="lazy" alt="" data-th="${i}">`:``}</li>`).join('')}</ul>
+    ${sp.notes&&sp.notes.length?`<h2>美食筆記</h2><ul class="hl notes">${sp.notes.map(h=>`<li class="${h[4]?'has-th':''}"><span class="dot">✎</span><div><div class="ht">${esc(h[0])}</div>${h[1]?`<div class="hn">${esc(h[1])}${h[2]&&h[2]!==h[1]?`<span class="sep"> · </span>${esc(h[2])}`:``}</div>`:``}<div class="hd">${esc(h[3])}</div></div>${h[4]?`<img class="th" src="${IMG(h[4])}" loading="lazy" alt="" data-nth="${sp.notes.indexOf(h)}">`:``}</li>`).join('')}</ul>`:``}
+    <h2>${sp.kind==='shop'?'背景':sp.kind==='eat'?'小知識':'歷史與必知'}</h2>
+    <div class="hist">${sp.history.map(p=>`<p>${esc(p)}</p>`).join('')}</div>
+    <h2>${sp.kind==='shop'?'哪裡買、怎麼帶':sp.kind==='eat'?'動線與提醒':'實用提示'}</h2>
+    <ul class="tips">${sp.tips.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+    ${sp.imgs.length>1?`<h2>圖片</h2><div class="gal">${sp.imgs.map((im,i)=>`<figure data-lb="${i}"><img src="${IMG(im.f)}" loading="lazy" alt=""><figcaption>${esc(im.c||'')}</figcaption></figure>`).join('')}</div>`:''}
+    <div class="credit">圖片來源：Wikipedia / Wikimedia Commons（見 img/credits.json）。內容為旅行參考，開放時間與票價以官方公告為準。</div>
+  </div>`;
+  // checks
+  m.querySelectorAll('.hl input').forEach(inp => inp.addEventListener('change', e => {
+    const i = +e.target.dataset.i; ck[i] = e.target.checked; save();
+    e.target.closest('li').classList.toggle('done', ck[i]);
+    m.querySelector('h2 span').textContent = `${ck.filter(Boolean).length}/${sp.highlights.length}`;
+    renderSide($('#q').value);
+  }));
+  m.querySelectorAll('.th').forEach(el => el.addEventListener('click', () => {
+    const h = el.dataset.nth!==undefined ? sp.notes[+el.dataset.nth] : sp.highlights[+el.dataset.th]; $('#lbimg').src = IMG(h[4]); $('#lbcap').textContent = h[0]+'　'+h[1]+(h[2]&&h[2]!==h[1]?' · '+h[2]:''); $('#lb').classList.add('on');
+  }));
+  // lightbox
+  m.querySelectorAll('[data-lb]').forEach(el => el.addEventListener('click', () => {
+    const im = sp.imgs[+el.dataset.lb]; $('#lbimg').src = IMG(im.f); $('#lbcap').textContent = im.c||''; $('#lb').classList.add('on');
+  }));
+  // nav
+  const idx = order.indexOf(id), prev = order[idx-1], next = order[idx+1];
+  $('#navbar').innerHTML = `<button id="prevbtn" ${prev?'':'disabled'}>‹ ${prev?esc(S[prev].name):''}</button><button id="nextbtn" class="next" ${next?'':'disabled'}>${next?esc(S[next].name):''} ›</button>`;
+  if(prev) $('#prevbtn').onclick = () => showSpot(prev);
+  if(next) $('#nextbtn').onclick = () => showSpot(next);
+  renderSide($('#q').value);
+  window.scrollTo(0,0);
+  closeSide();
+}
+
+
+// ── Day page ──────────────────────────────────────────────
+const CO = G.coords || {};
+const havKm = (a,b) => { const R=6371, r=x=>x*Math.PI/180; const dp=r(b[0]-a[0]), dl=r(b[1]-a[1]); const h=Math.sin(dp/2)**2+Math.cos(r(a[0]))*Math.cos(r(b[0]))*Math.sin(dl/2)**2; return 2*R*Math.asin(Math.sqrt(h)); };
+const walkMin = (a,b) => Math.round(havKm(a,b)*1.3/0.08);
+function sunTimes(lat, lon, y, m, d){ // NOAA, returns local (UTC+2 CEST, or +8 for Taiwan) HH:MM
+  const tz = lon > 100 ? 8 : 2;
+  const jd = (()=>{ let Y=y,M=m; if(M<=2){Y--;M+=12;} const A=Math.floor(Y/100), B=2-A+Math.floor(A/4); return Math.floor(365.25*(Y+4716))+Math.floor(30.6001*(M+1))+d+B-1524.5; })();
+  const n = (jd + 0.5) - 2451545.0 + 0.0008 - lon/360;
+  const M_ = (357.5291 + 0.98560028*n) % 360;
+  const C = 1.9148*Math.sin(M_*Math.PI/180) + 0.02*Math.sin(2*M_*Math.PI/180) + 0.0003*Math.sin(3*M_*Math.PI/180);
+  const L = (M_ + C + 180 + 102.9372) % 360;
+  const Jt = 2451545.0 + n + 0.0053*Math.sin(M_*Math.PI/180) - 0.0069*Math.sin(2*L*Math.PI/180);
+  const dec = Math.asin(Math.sin(L*Math.PI/180)*Math.sin(23.44*Math.PI/180));
+  const cosw = (Math.sin(-0.83*Math.PI/180) - Math.sin(lat*Math.PI/180)*Math.sin(dec)) / (Math.cos(lat*Math.PI/180)*Math.cos(dec));
+  const w = Math.acos(Math.max(-1,Math.min(1,cosw)))*180/Math.PI;
+  const fmt = jdx => { const t = ((jdx + 0.5) % 1) * 24 + tz; const h = Math.floor(t % 24), mm = Math.round((t - Math.floor(t))*60); return `${String(h).padStart(2,'0')}:${String(mm).padStart(2,'0')}`; };
+  return { rise: fmt(Jt - w/360), set: fmt(Jt + w/360) };
+}
+const TODO_LS = 'italy_guide_todo_v1';
+let todos = {}; try { todos = JSON.parse(localStorage.getItem(TODO_LS)||'{}'); } catch(e){}
+
+function showDay(date){
+  const d = D.find(x => x.date === date); if(!d) return showOverview();
+  state.spot = null; state.day = date; location.hash = 'd-' + date.replace('/','-');
+  const m = $('#main'); const plan = d.plan || {};
+  const [mo, da] = date.split('/').map(Number);
+  const sun = d.ll ? sunTimes(d.ll[0], d.ll[1], 2026, mo, da) : null;
+  const spots = d.spots.filter(id => !S[id].kind), shops = d.spots.filter(id => S[id].kind==='shop');
+  let eats = d.spots.filter(id => S[id].kind==='eat'); if(!eats.length) eats = Object.keys(S).filter(id => S[id].kind==='eat' && S[id].city===d.city);
+  // route with walking minutes
+  let route = '', prev = null, n = 0;
+  for(const id of spots){ n++; const p = progress(id);
+    if(prev && CO[prev] && CO[id]) route += `<li class="walk">↓ 步行約 ${walkMin(CO[prev],CO[id])} 分鐘</li>`;
+    route += `<li data-spot="${id}"><span class="n">${n}</span><span>${esc(S[id].name)}<br><small style="color:var(--muted)">${esc(S[id].booked||'')}</small></span><span class="pg">${p.c}/${p.n}</span></li>`;
+    prev = id; }
+  for(const id of [...eats, ...shops]){ const p = progress(id); route += `<li data-spot="${id}"><span class="n ${S[id].kind==='eat'?'e':'s'}">${S[id].kind==='eat'?'🍴':'🛍'}</span><span>${esc(S[id].name)}</span><span class="pg">${p.c}/${p.n}</span></li>`; }
+  const tl = (plan.transport||[]).map(([t,x]) => `<li><span class="t">${esc(t)}</span><span>${esc(x)}</span></li>`).join('');
+  const hotel = plan.hotel ? `<div class="hotel"><b>${esc(plan.hotel.name)}</b><div class="a">${esc(plan.hotel.addr)}</div><div class="a">${esc(plan.hotel.note||'')}</div><a class="map" href="${esc(plan.hotel.map)}" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;font-size:13px;padding:4px 10px;border:1px solid var(--accent);border-radius:999px;text-decoration:none">📍 Google 地圖</a></div>` : (plan.hotel===null && date!=='9/28' ? `<div class="hotel"><b>機上</b></div>` : '');
+  const maps = (d.maps||[]).map((mp,i) => `<img class="mapimg" src="${IMG('maps/'+mp.file.split('/').pop())}" alt="" data-map="${i}"><div class="legend">${mp.markers.map(k => `<span><b class="${k.kind==='eat'?'e':k.kind==='store'?'s':k.kind==='hotel'?'h':''}">${esc(k.label)}</b>${esc(k.name)}</span>`).join('')}</div>`).join('');
+  const eatItems = eats.flatMap(id => S[id].highlights.map((h,i) => `<li class="x" data-eat="${id}" data-i="${i}"><div class="row"><span>${esc(h[0])}</span><span class="tog">▾</span></div><div class="det"><div class="hn">${esc(h[1])}${h[2]&&h[2]!==h[1]?`<span class="sep"> · </span>${esc(h[2])}`:``}</div>${h[4]?`<img src="${IMG(h[4])}" loading="lazy" alt="">`:``}<div class="hd">${esc(h[3])}</div>${h[5]?`<a class="map" href="${esc(h[5])}" target="_blank" rel="noopener">📍 Google 地圖</a>`:``}</div></li>`)).join('');
+  const eatLink = eats.length ? `<div style="font-size:13px;color:var(--muted);margin:-6px 0 10px">完整介紹見 ${eats.map(id=>`<a href="#${id}" data-spot="${id}">${esc(S[id].name)}</a>`).join('、')}</div>` : '';
+  const storeItems = (G.stores||[]).filter(st => st.city===d.city).map(st => `<li class="x"><div class="row"><span>${esc(st.name)}</span><span class="tog">▾</span></div><div class="det">${st.desc?`<div class="hd">${esc(st.desc)}</div>`:``}<a class="map" href="${esc(st.map)}" target="_blank" rel="noopener">📍 Google 地圖</a></div></li>`).join('');
+  const tk = todos[date] || (todos[date] = (plan.todo||[]).map(()=>false));
+  const todo = (plan.todo||[]).map((t,i) => `<li class="${tk[i]?'done':''}"><input type="checkbox" data-i="${i}" ${tk[i]?'checked':''}><span>${esc(t)}</span></li>`).join('');
+  m.innerHTML = `
+  <div class="dayhero"><div class="dt">DAY ${D.indexOf(d)+1}　${date}（${d.dow}）${todayKey===date?'<span class="today">今天</span>':''}</div><h1>${esc(d.city)}　<span style="font-weight:400;color:var(--muted);font-size:18px">${esc(d.title)}</span></h1>${sun?`<div class="sun">☀ 日出 ${sun.rise}　🌇 日落 ${sun.set}</div>`:''}</div>
+  <div class="wrap">
+    ${tl?`<h2>時間表</h2><ul class="tl">${tl}</ul>`:''}
+    ${hotel?`<h2>住宿</h2>${hotel}`:''}
+    ${route?`<h2>今日路線</h2><ul class="route">${route}</ul>`:''}
+    ${maps?`<h2>地圖（離線）</h2><div class="legend" style="margin:0 0 8px"><span><b>1</b>景點</span><span><b class="e">a</b>餐廳</span><span><b class="s">b</b>商店</span><span><b class="h">H</b>住宿</span></div>${maps}`:''}
+    ${eatItems?`<h2>今日可吃</h2>${eatLink}<ul class="eatlist">${eatItems}</ul>`:''}
+    ${storeItems?`<h2>採購地點</h2><ul class="eatlist">${storeItems}</ul>`:''}
+    ${todo?`<h2>提醒</h2><ul class="todo">${todo}</ul>`:''}
+  </div>`;
+  m.querySelectorAll('.eatlist li.x .row').forEach(r => r.addEventListener('click', () => { const li = r.parentElement; li.classList.toggle('open'); }));
+  m.querySelectorAll('.todo input').forEach(inp => inp.addEventListener('change', e => { const i=+e.target.dataset.i; tk[i]=e.target.checked; localStorage.setItem(TODO_LS, JSON.stringify(todos)); e.target.closest('li').classList.toggle('done', tk[i]); }));
+  m.querySelectorAll('.mapimg').forEach(el => el.addEventListener('click', () => { $('#lbimg').src = el.src; $('#lbcap').textContent = `${date} 地圖`; $('#lb').classList.add('on'); }));
+  const di = D.indexOf(d), pd = D[di-1], nd = D[di+1];
+  $('#navbar').innerHTML = `<button id="prevbtn" ${pd?'':'disabled'}>‹ ${pd?esc(pd.date+' '+pd.city):''}</button><button id="nextbtn" class="next" ${nd?'':'disabled'}>${nd?esc(nd.date+' '+nd.city):''} ›</button>`;
+  if(pd) $('#prevbtn').onclick = () => showDay(pd.date);
+  if(nd) $('#nextbtn').onclick = () => showDay(nd.date);
+  renderSide($('#q').value); window.scrollTo(0,0); closeSide();
+}
+
+// events
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-spot]'); if(b){ showSpot(b.dataset.spot); return; }
+  const dbtn = e.target.closest('[data-day]'); if(dbtn){ const d = D[+dbtn.dataset.day]; if(d.plan){ showDay(d.date); dbtn.parentElement.classList.add('open'); } else { dbtn.parentElement.classList.toggle('open'); } return; }
+});
+$('#homebtn').onclick = () => { showOverview(); closeSide(); };
+$('#q').addEventListener('input', e => renderSide(e.target.value));
+$('#lb').onclick = () => $('#lb').classList.remove('on');
+document.addEventListener('keydown', e => {
+  if(e.key==='Escape') $('#lb').classList.remove('on');
+  if(!state.spot || e.target.tagName==='INPUT') return;
+  const idx = order.indexOf(state.spot);
+  if(e.key==='ArrowRight' && order[idx+1]) showSpot(order[idx+1]);
+  if(e.key==='ArrowLeft' && order[idx-1]) showSpot(order[idx-1]);
+});
+function closeSide(){ $('#side').classList.remove('on'); $('#scrim').classList.remove('on'); }
+$('#menubtn').onclick = () => { $('#side').classList.toggle('on'); $('#scrim').classList.toggle('on'); };
+$('#scrim').onclick = closeSide;
+window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if(h && S[h] && h!==state.spot) showSpot(h); else if(dayFromHash(h) && dayFromHash(h)!==state.day && D.find(x=>x.date===dayFromHash(h))) showDay(dayFromHash(h)); else if(!h && (state.spot||state.day)) showOverview(); });
+
+// init
+// nearest trip day: today if within trip, first day if before, null if after
+function nearestDay(){
+  const now = new Date(); const y = now.getFullYear();
+  const tripDays = D.filter(d => d.plan);
+  const toDate = d => { const [m,dd] = d.date.split('/').map(Number); return new Date(2026, m-1, dd); };
+  const t0 = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if(y !== 2026) return tripDays[0];
+  if(t0 < toDate(tripDays[0])) return tripDays[0];
+  const hit = tripDays.find(d => toDate(d).getTime() === t0.getTime()); if(hit) return hit;
+  return null;
+}
+$('#daybtn').onclick = () => { const d = nearestDay() || D.find(x=>x.plan); showDay(d.date); closeSide(); };
+const h = location.hash.slice(1);
+const dayFromHash = hh => hh.startsWith('d-') ? hh.slice(2).replace('-','/') : null;
+if(h && S[h]) showSpot(h); else if(dayFromHash(h) && D.find(x=>x.date===dayFromHash(h))) showDay(dayFromHash(h)); else if(nearestDay()) showDay(nearestDay().date); else showOverview();
+})();
+</script>
+<script>
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  navigator.serviceWorker.register('./sw.js').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const nw = reg.installing;
+      nw && nw.addEventListener('statechange', () => {
+        if (nw.state === 'installed' && navigator.serviceWorker.controller) {
+          const t = document.createElement('div');
+          t.style.cssText = 'position:fixed;top:12px;left:50%;transform:translateX(-50%);z-index:99;background:#8a3b2a;color:#fff;padding:10px 16px;border-radius:10px;font-size:14px;box-shadow:0 4px 20px rgba(0,0,0,.3);cursor:pointer';
+          t.textContent = '有新版本，點此更新';
+          t.onclick = () => location.reload();
+          document.body.appendChild(t);
+        }
+      });
+    });
+  }).catch(()=>{});
+}
+</script>
+</body>
+</html>

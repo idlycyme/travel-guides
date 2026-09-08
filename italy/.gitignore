@@ -1,0 +1,5 @@
+.tiles/
+maps.json
+coords.json
+coords.json.bak
+.DS_Store
